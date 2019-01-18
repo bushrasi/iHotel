@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E1E1">
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="HOTEL IN THE GROUND"
+        android:layout_gravity="center"
+        android:textColor="#f00"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="RESERVATION"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/a_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Adults"
+                    android:textColor="#f000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Nights ($20/person/night): "
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/a_editText"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#685561"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:inputType="number"
+                    android:textColor="#f000" />
+
+                <EditText
+                    android:id="@+id/n_editText"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#685561"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bedSize-textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Bed Size"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/bedSize-radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/single-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Single ($20/night)"
+                    android:buttonTint="#685561" />
+
+                <RadioButton
+                    android:id="@+id/twoS-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Two singles ($30/night)"
+                    android:buttonTint="#685561"/>
+
+                <RadioButton
+                    android:id="@+id/double-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Double ($40/night)"
+                    android:buttonTint="#685561"/>
+
+                <RadioButton
+                    android:id="@+id/twoD-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Two doubles ($50/night)"
+                    android:buttonTint="#685561"/>
+
+                <RadioButton
+                    android:id="@+id/king-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="King ($60/night)"
+                    android:buttonTint="#685561"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/media-textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Media"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/radio-checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:checked="false"
+                android:text="Radio ($10)"
+                android:buttonTint="#685561" />
+
+            <CheckBox
+                android:id="@+id/tv-checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="TV ($20)"
+                android:buttonTint="#685561" />
+
+            <CheckBox
+                android:id="@+id/comp-checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Computer ($25)"
+                android:buttonTint="#685561" />
+
+            <TextView
+                android:id="@+id/add-textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Additional"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/newspaper-checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Morning Newspaper (FREE)"
+                android:buttonTint="#685561" />
+
+            <CheckBox
+                android:id="@+id/in-room_breakfast-checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="In-Room Breakfast ($10)"
+                android:buttonTint="#685561" />
+
+            <TextView
+                android:id="@+id/wifi-textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="WIFI Access"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/wifi-radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/basic-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Basic (FREE)"
+                    android:buttonTint="#685561"/>
+
+                <RadioButton
+                    android:id="@+id/medium-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Medium Speed ($10)"
+                    android:buttonTint="#685561"/>
+
+                <RadioButton
+                    android:id="@+id/high-radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="High Speed ($15)"
+                    android:buttonTint="#685561"/>
+
+            </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reserve-button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Reserve" />
+
+                    <Button
+                        android:id="@+id/about-button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text="About" />
+
+                    <Button
+                        android:id="@+id/reset-button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Reset" />
+                </LinearLayout>
+            <TextView
+                android:id="@+id/subtotal"
+                android:layout_width="500dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="SubTotal"
+                android:textColor="#352931"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="500dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:text="Tax"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="#352931"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="500dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="16dp"
+                android:text="Total"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="#352931"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
